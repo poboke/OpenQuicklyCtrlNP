@@ -11,8 +11,12 @@
 // copied from:
 // /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/
 // HIToolbox.framework/Versions/A/Headers/Events.h
-static NSUInteger kKeyCodeN = 0x2D; // decimal: 45
-static NSUInteger kKeyCodeP = 0x23; // decimal: 35
+//static NSUInteger kKeyCodeN = 0x2D; // decimal: 45
+//static NSUInteger kKeyCodeP = 0x23; // decimal: 35
+//static NSUInteger kKeyCodeH = 0x04; // decimal: 04
+static NSUInteger kKeyCodeJ = 0x26; // decimal: 38
+static NSUInteger kKeyCodeK = 0x28; // decimal: 40
+//static NSUInteger kKeyCodeL = 0x25; // decimal: 37
 
 + (void)load
 {
@@ -29,12 +33,12 @@ static NSUInteger kKeyCodeP = 0x23; // decimal: 35
 
     BOOL controlKeyPressed = (theEvent.modifierFlags & NSControlKeyMask) != 0;
     if (self.selectedRow != -1) {
-        if (controlKeyPressed && theEvent.keyCode == kKeyCodeN) {
+        if (controlKeyPressed && theEvent.keyCode == kKeyCodeJ) {
             // next row
             targetRow = (self.selectedRow == self.numberOfRows - 1) ?
-            self.selectedRow : self.selectedRow + 1;
+                        self.selectedRow : self.selectedRow + 1;
             letsNavigate = YES;
-        } else if (controlKeyPressed && theEvent.keyCode == kKeyCodeP) {
+        } else if (controlKeyPressed && theEvent.keyCode == kKeyCodeK) {
             // previous row
             targetRow = (self.selectedRow == 0) ? 0 : self.selectedRow - 1;
             letsNavigate = YES;

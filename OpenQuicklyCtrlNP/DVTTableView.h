@@ -5,8 +5,8 @@
 
 @protocol DVTProgressIndicatorProvidingView <NSObject>
 - (NSProgressIndicator *)progressIndicatorForItem:(id)arg1
-                                createIfNecessary:(BOOL)arg2
-                           progressIndicatorStyle:(unsigned long long)arg3;
+    createIfNecessary:(BOOL)arg2
+    progressIndicatorStyle:(unsigned long long)arg3;
 
 @optional
 - (void)clearProgressIndicators;
@@ -22,8 +22,8 @@
     NSEvent *_event;
     id _progressIndicatorsByItem;
     struct {
-        unsigned int allowsSizingShorterThanClipView:1;
-        unsigned int reserved:7;
+        unsigned int allowsSizingShorterThanClipView : 1;
+        unsigned int reserved : 7;
     } _dvtTVFlags;
     BOOL _showAlternatingRowBackgroundColorsWithContents;
     unsigned long long _gridLineStyleBeforeEmptyContentStringShown;
@@ -32,9 +32,9 @@
 
 @property BOOL skipGridLinesOnLastRow; // @synthesize skipGridLinesOnLastRow=_skipGridLinesOnLastRow;
 @property int emptyContentStringStyle; // @synthesize emptyContentStringStyle=_emptyContentStringStyle;
-@property(copy, nonatomic) NSString *emptyContentString; // @synthesize emptyContentString=_emptyContentString;
-@property(retain) NSEvent *event; // @synthesize event=_event;
-@property(copy) NSIndexSet *draggedRows; // @synthesize draggedRows=_draggedRows;
+@property (copy, nonatomic) NSString *emptyContentString; // @synthesize emptyContentString=_emptyContentString;
+@property (retain) NSEvent *event; // @synthesize event=_event;
+@property (copy) NSIndexSet *draggedRows; // @synthesize draggedRows=_draggedRows;
 @property unsigned long long dvt_groupRowStyle; // @synthesize dvt_groupRowStyle=_dvt_groupRowStyle;
 //- (void).cxx_destruct;
 - (void)drawGridInClipRect:(struct CGRect)arg1;
@@ -50,7 +50,7 @@
 - (void)insertText:(id)arg1;
 - (void)doCommandBySelector:(SEL)arg1;
 - (void)keyDown:(id)arg1;
-@property(readonly) NSIndexSet *contextMenuSelectedRowIndexes;
+@property (readonly) NSIndexSet *contextMenuSelectedRowIndexes;
 - (id)clickedRowIndexes;
 - (void)viewWillDraw;
 - (void)_showEmptyContentString;
@@ -63,4 +63,4 @@
 
 @end
 
-#endif
+#endif /* ifndef OpenQuicklyCtrlNP_DVTTableView_h */

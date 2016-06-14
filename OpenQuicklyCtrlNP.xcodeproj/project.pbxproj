@@ -12,6 +12,7 @@
 		B1BCE2D3199AE799003722CE /* IDEOpenQuicklyTableView+CtrlNP.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BCE2D2199AE799003722CE /* IDEOpenQuicklyTableView+CtrlNP.m */; };
 		B1BCE2D5199AE88D003722CE /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BCE2D4199AE88D003722CE /* IDEKit.framework */; };
 		B1BCE2D7199AE8A0003722CE /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BCE2D6199AE8A0003722CE /* DVTKit.framework */; };
+		C51E04261D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.m in Sources */ = {isa = PBXBuildFile; fileRef = C51E04251D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		B1BCE2D2199AE799003722CE /* IDEOpenQuicklyTableView+CtrlNP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEOpenQuicklyTableView+CtrlNP.m"; sourceTree = "<group>"; };
 		B1BCE2D4199AE88D003722CE /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../../../../../../../Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<group>"; };
 		B1BCE2D6199AE8A0003722CE /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
+		C51E04231D0FEB42001F94A3 /* IDEOpenQuicklyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEOpenQuicklyWindowController.h; sourceTree = "<group>"; };
+		C51E04241D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEOpenQuicklyWindowController+CtrlNP.h"; sourceTree = "<group>"; };
+		C51E04251D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEOpenQuicklyWindowController+CtrlNP.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				B1BCE2CD199AE666003722CE /* NSObject+Swizzle.m */,
 				B1BCE2D1199AE799003722CE /* IDEOpenQuicklyTableView+CtrlNP.h */,
 				B1BCE2D2199AE799003722CE /* IDEOpenQuicklyTableView+CtrlNP.m */,
+				C51E04241D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.h */,
+				C51E04251D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.m */,
 				B16A1850199AE26A00E314D3 /* Supporting Files */,
 			);
 			path = OpenQuicklyCtrlNP;
@@ -93,6 +99,7 @@
 		B1BCE2CB199AE604003722CE /* Xcode Headers */ = {
 			isa = PBXGroup;
 			children = (
+				C51E04231D0FEB42001F94A3 /* IDEOpenQuicklyWindowController.h */,
 				B1BCE2CF199AE6F5003722CE /* IDEOpenQuicklyTableView.h */,
 				B1BCE2D0199AE747003722CE /* DVTTableView.h */,
 			);
@@ -166,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1BCE2D3199AE799003722CE /* IDEOpenQuicklyTableView+CtrlNP.m in Sources */,
+				C51E04261D0FEB57001F94A3 /* IDEOpenQuicklyWindowController+CtrlNP.m in Sources */,
 				B1BCE2CE199AE666003722CE /* NSObject+Swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
